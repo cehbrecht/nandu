@@ -1,0 +1,15 @@
+server:
+  name: Nandu
+  url: http://localhost:5000
+  processes:
+    - name: say-hello
+      title: Say Hello
+      description: A process that returns a simple greeting message.
+      impl: nandu.processes.say_hello.SayHelloProcess
+
+logging:
+  level: DEBUG
+
+resources:
+  - type: process
+    name: processes
