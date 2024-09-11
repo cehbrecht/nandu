@@ -16,51 +16,45 @@ https://www.gardenandpatiohomeguide.com/birds-that-look-like-emus/
 ### Prerequisites
 
 - [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/)
-- [Poetry](https://python-poetry.org/docs/#installation)
 
-### Step 1: Clone the Repository
+### Install from GitHub
+
+Clone the repository:
 
 ```bash
 git clone https://github.com/cehbrecht/nandu.git
 cd nandu
 ```
 
-### Step 2: Create and Activate the Conda Environment
+Create the Conda environment:
 
-To create the Conda environment, run:
 ```bash
 conda env create -f environment.yml
 conda activate nandu
 ```
 
-### Step 3: Install Dependencies with Poetry
-
-Once the environment is activated, install the project dependencies using Poetry:
+Install the project dependencies using Poetry:
 ```bash
 poetry install
 ```
 
 ## Usage
 
-### Running the pygeoapi Server
-
-To start the pygeoapi server and expose the processes:
+Start the pygeoapi server and expose the processes:
 ```bash
 pygeoapi serve
 ```
 
 This will start the API on http://localhost:5000.
 
-### Accessing the Processes
 
-#### List all processes:
+List all processes:
 
 http://localhost:5000/processes
 
 
-#### Say Hello Process:
 
-View process details:
+View process details of "Hello World":
 http://localhost:5000/processes/say-hello
 
 
