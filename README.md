@@ -46,7 +46,7 @@ poetry install
 
 To start the pygeoapi server and expose the processes:
 ```bash
-pygeoapi serve --config nandu/config/local.config.yml
+pygeoapi serve
 ```
 
 This will start the API on http://localhost:5000.
