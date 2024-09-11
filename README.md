@@ -38,6 +38,26 @@ Install the project dependencies using Poetry:
 poetry install
 ```
 
+## Configuration
+
+Edit pygeoapi config (optional):
+```bash
+vim pygeoapi-config.yml
+```
+
+Export paths to configs:
+
+```bash
+export PYGEOAPI_CONFIG=pygeoapi-config.yml
+export PYGEOAPI_OPENAPI=pygeoapi-openapi.yml 
+```
+
+Update the OpenAPI configuration:
+
+```bash
+pygeoapi openapi generate $PYGEOAPI_CONFIG --output-file $PYGEOAPI_OPENAPI
+```
+
 ## Usage
 
 Start the pygeoapi server and expose the processes:
@@ -55,16 +75,16 @@ http://localhost:5000/processes
 
 
 View process details of "Hello World":
-http://localhost:5000/processes/say-hello
+http://localhost:5000/processes/hello-world
 
 
 Execute the process:
 ```bash
-curl -X POST http://localhost:5000/processes/say-hello/execution \
+curl -X POST http://localhost:5000/processes/hello-world/execution \
      -H "Content-Type: application/json" \
      -d '{
          "inputs": {
-             "name": "John"
+             "name": "Alice"
          }
      }'
 ```

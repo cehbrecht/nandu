@@ -14,6 +14,10 @@ server:
   # cors: true
   pretty_print: true
   limit: 10
+  manager:
+    name: TinyDB
+    connection: /tmp/pygeoapi-process-manager.db
+    output_dir: /tmp/
   
 logging:
   level: DEBUG
@@ -64,4 +68,4 @@ resources:
   hello-world:
         type: process
         processor:
-            name: HelloWorld
+            name: nandu.process.hello_world.HelloWorldProcessor
