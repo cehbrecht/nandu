@@ -69,3 +69,7 @@ resources:
         type: process
         processor:
             name: nandu.process.hello_world.HelloWorldProcessor
+  echo:
+        type: process
+        processor:
+            name: nandu.process.echo.EchoProcessor
