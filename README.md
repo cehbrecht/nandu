@@ -4,12 +4,36 @@
     This [bird looks like an Emu](https://www.gardenandpatiohomeguide.com/birds-that-look-like-emus/) but its not. The name *Nandu* is mostly used in European countries. Otherwise this bird is called *Rhea*.
     
 
-**Nandu** is an OGC API - Processes implementation using `pygeoapi`. It provides simple processes like calculating the square of a number and a "Say Hello" greeting process.
+**Nandu** is an OGC API - Processes implementation using `pygeoapi`. It provides simple processes like a "Say Hello" greeting process.
 
 ## Features
 
-- **Say Hello Process**: Returns a simple greeting message.
-- **Square Process**: Returns the square of a number.
+- **Hello World Process**: Returns a simple greeting message.
+- **Echo Process**: Returns an echo message after some time.
+
+## Quick Guide
+
+Clone the repository:
+```bash
+git clone https://github.com/cehbrecht/nandu.git
+cd nandu
+```
+
+Create the Conda environment:
+```bash
+conda env create -f environment.yml
+conda activate nandu
+```
+
+You can use make to run the installation:
+```bash
+make install
+```
+
+... and start the service:
+```bash
+make start
+```
 
 ## Installation
 
@@ -87,18 +111,6 @@ curl -X POST http://localhost:5000/processes/hello-world/execution \
              "name": "Alice"
          }
      }'
-```
-
-## Use make
-
-In addition you can also use make to run the installation:
-```bash
-make install
-```
-
-... and start the service:
-```bash
-make start
 ```
 
 ## License
