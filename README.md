@@ -1,8 +1,8 @@
 # Nandu
 
-Looks like a Emu but its not. The nandu is based on pygeoapi instead of pywps.
-
-https://www.gardenandpatiohomeguide.com/birds-that-look-like-emus/
+**Nandu - the bird**
+    This [bird looks like an Emu](https://www.gardenandpatiohomeguide.com/birds-that-look-like-emus/) but its not. The name *Nandu* is mostly used in European countries. Otherwise this bird is called *Rhea*.
+    
 
 **Nandu** is an OGC API - Processes implementation using `pygeoapi`. It provides simple processes like calculating the square of a number and a "Say Hello" greeting process.
 
