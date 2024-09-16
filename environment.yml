@@ -1,7 +1,6 @@
 name: nandu
 channels:
 - conda-forge
-- defaults
 dependencies:
 - pip
 - python>=3.9,<3.11
