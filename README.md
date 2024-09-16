@@ -89,6 +89,18 @@ curl -X POST http://localhost:5000/processes/hello-world/execution \
      }'
 ```
 
+## Use make
+
+In addition you can also use make to run the installation:
+```bash
+make install
+```
+
+... and start the service:
+```bash
+make start
+```
+
 ## License
 
 This project is licensed under the Apache License version 2.
